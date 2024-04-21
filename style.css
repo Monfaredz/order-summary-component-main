@@ -1,0 +1,143 @@
+:root {
+    --primary-color: hsl(225, 100%, 94%);
+    --secondary-color: hsl(245, 75%, 52%);
+    --bg-illustration: url(images/pattern-background-desktop.svg);
+}
+
+body {
+    background: var(--bg-illustration)no-repeat center top;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+}
+
+.hero {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.box {
+    width: 400px;
+    height: 550px;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.box-wrapper {
+    padding: 0 40px 50px 40px;
+}
+
+.innerbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgb(158, 158, 158);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(158, 158, 158);
+
+}
+
+h4,
+h5 {
+    margin: 0;
+}
+
+.prices {
+    margin: 0 0 0 17px;
+    padding: 0;
+}
+
+.btn-primary {
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: white;
+    margin: 1rem 0;
+    box-shadow: 3px 3px 5px var(--primary-color);
+    font-size: 0.9rem;
+}
+
+
+.btn {
+    width: 100%;
+    cursor: pointer;
+
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0.6rem 0;
+    text-align: center;
+    color: gray;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+h5 {
+    color: rgb(158, 158, 158);
+}
+
+@media screen and (max-width:400px) {
+    .box {
+        width: 300px;
+        /* background-color: aqua; */
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    h5 {
+        font-size: 0.6rem;
+    }
+
+    .change {
+        font-size: 0.6rem;
+    }
+
+    .box-wrapper {
+        padding: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+}
